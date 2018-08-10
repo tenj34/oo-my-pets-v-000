@@ -36,7 +36,7 @@ class Owner
     end
   end
 
-  def plays_with_cats
+  def play_with_cats
     @pets.collect do |species, instances|
       if species == :cats
         instances.each do |cat|
