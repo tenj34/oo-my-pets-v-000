@@ -71,6 +71,7 @@ class Owner
     num_fish = @pets[:fishes].size
 
     puts "I have #{fish}, #{dogs}dog(s), and #{cats} cat(s)."
+  end
 
 
 
