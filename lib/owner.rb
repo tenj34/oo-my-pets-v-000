@@ -46,7 +46,7 @@ class Owner
     end
   end
 
-  def feed_the_fish
+  def feed_fish
     @pets.collect do |species, instances|
       if species == :fishes
         instances.each do |fish|
