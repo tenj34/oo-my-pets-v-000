@@ -37,7 +37,13 @@ class Owner
   end
 
   def plays_with_cats
-
+    @pets.collcet do |species, instances|
+      if species == :cats
+        instances.each do |cat|
+          cat.mood = "happy"
+        end
+      end
+    end
   end
 
 
