@@ -56,7 +56,7 @@ class Owner
     end
   end
 
-  def sell_pets
+  def sell_pets # sells pets which then changes their mood to nervous
     @pets.collect do |species, instances|
       instances.each do |pet|
         pet.mood = "nervous"
@@ -65,6 +65,12 @@ class Owner
     end
   end
 
+  def list_pets # put all the results in a variable to make it easier
+    num_dogs = @pets[:dogs].size
+    num_cats = @pets[:cats].size
+    num_fish = @pets[:fishes].size
+
+    puts "I have #{fish}, #{dogs}dog(s), and #{cats} cat(s)"
 
 
 
